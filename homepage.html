@@ -1,0 +1,42 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1" />
+	<link rel="stylesheet" href="css/all.css" type="text/css" />
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>Pogodka</title>
+</head>
+
+<body style="background-image: url('images/background.jpg')" class="bg-cover bg-no-repeat min-h-[100vh]">
+	<div id="wrapper">
+		<header>
+		</header>
+		<main class="w-full h-[100vh] flex justify-center items-center bg-[rgba(0,0,0,.6)] text-white">
+			<div class="flex-col p-8 bg-slate-950 rounded">
+				<input id="searchInput" type="search" placeholder="Ваше місто" required
+					class="py-2 px-4 w-full block text-black">
+				<div class="min-w-[350ox] flex flex-col gap-4 mt-8">
+					<h1 class="font-bold text-2xl">Погода зараз </h1>
+					<p>Температура: <span id="temp">17 C</span></p>
+					<p>Вітер: <span id="wind">17 km/h</span></p>
+					<p>Вологість: <span id="humidity">75%</span></p>
+					<p>Хмарніть: <span id="cloudy">Cloudy</span></p>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<section class="">
+				<div class="layout">
+
+				</div>
+			</section>
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
